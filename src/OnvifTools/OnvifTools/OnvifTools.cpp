@@ -2,11 +2,11 @@
 //
 
 #include "OnvifTools.h"
+#include "test_onvif.h"
 
-using namespace std;
-
-int main()
+int main(int argc, char ** argv)
 {
-	cout << "Hello CMake." << endl;
+	std::cout << "Hello CMake." << std::endl;
+	TestOnvif::Inst()->test_main(argc, argv);
 	return 0;
 }
